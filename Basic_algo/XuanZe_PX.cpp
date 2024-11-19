@@ -1,44 +1,33 @@
-//
-// Created by 黄展博 on 2024/11/19.
-//
-
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
-void sort(vector<int>& nums) {
-    int n = nums.size();
-    // sortedIndex 是一个分割线
-    // 索引 < sortedIndex 的元素都是已排序的
-    // 索引 >= sortedIndex 的元素都是未排序的
-    // 初始化为 0，表示整个数组都是未排序的
-    int sortedIndex = 0;
-    while (sortedIndex < n) {
-        // 找到未排序部分 [sortedIndex, n) 中的最小值
-        int minIndex = sortedIndex;
-        for (int i = sortedIndex + 1; i < n; i++) {
-            if (nums[i] < nums[minIndex]) {
-                minIndex = i;
+// 选择排序函数
+void sort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
             }
         }
-        // 交换最小值和 sortedIndex 处的元素
-        if (minIndex != sortedIndex) {
-            swap(nums[sortedIndex], nums[minIndex]);
+        if (minIndex != i) {
+            swap(arr[i], arr[minIndex]);
         }
-
-        // sortedIndex 后移一位
-        sortedIndex++;
     }
 }
 
 int main() {
-    std::vector<int> nums = {5, 2, 8, 3, 9, 1};
-    sort(nums);
+    // 定义一个静态数组并初始化
+    int arr[] = {5, 2, 8, 3, 9, 1};
+    // 计算数组的大小
+    int n = sizeof(arr) / sizeof(arr[0]);
+    // 调用排序函数
+    sort(arr, n);
 
-    for (int num : nums) {
-        cout << num << " ";
+    // 输出排序后的数组
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
     cout << endl;
 
