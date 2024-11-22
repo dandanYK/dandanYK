@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/admin/CLionProjects/dandanYK/dandanYK -B /Users/admin/CLionProjects/dandanYK/dandanYK/cmake-build-debug
+    -- src/XuanZe_PX.cpp will be compiled to runtime/XuanZe_PX
+    -- src/DongTaiSZ.cpp will be compiled to runtime/DongTaiSZ
+    -- src/LianBiao_Zhan.cpp will be compiled to runtime/LianBiao_Zhan
+    -- src/Zhan_LB.cpp will be compiled to runtime/Zhan_LB
+    -- src/Dong_Tainc.cpp will be compiled to runtime/Dong_Tainc
+    -- src/HuanXing_SZ.cpp will be compiled to runtime/HuanXing_SZ
+    -- src/CMakeCCompilerId.cpp will be compiled to runtime/CMakeCCompilerId
+    -- src/CMakeCXXCompilerId.cpp will be compiled to runtime/CMakeCXXCompilerId
+    -- src/main.cpp will be compiled to runtime/main
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/admin/CLionProjects/dandanYK/dandanYK/cmake-build-debug
