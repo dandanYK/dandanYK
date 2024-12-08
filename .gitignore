@@ -4,3 +4,5 @@ main.c
 runtime
 .idea
 main.cpp
+.vscode
+*.dSYM
