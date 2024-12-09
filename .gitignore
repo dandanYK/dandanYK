@@ -6,3 +6,4 @@ runtime
 main.cpp
 .vscode
 *.dSYM
+.vscode
