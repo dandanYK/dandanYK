@@ -6,4 +6,4 @@ runtime
 main.cpp
 .vscode
 *.dSYM
-.vscode
+.DS_Store
